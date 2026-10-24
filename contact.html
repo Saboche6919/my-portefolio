@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Carine BAKA pour une opportunité d'alternance en informatique.">
+    <title>Contact | Carine's World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Navigation principale">
+            <a class="btn" href="index.html">Accueil</a>
+            <a class="btn" href="apropos.html">À propos</a>
+            <a class="btn" href="competences.html">Compétences</a>
+            <a class="btn" href="projets.html">Projets</a>
+            <a class="btn" href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+
+        <section class="contact-intro">
+            <p class="contact-label">Restons en contact</p>
+            <h1>Un petit mot ?</h1>
+
+            <p>
+                Une opportunité d'alternance, une question
+                ou simplement envie d'échanger ?
+                N'hésitez pas à m'écrire !
+            </p>
+        </section>
+
+        <section class="contact-section">
+            <h2>Écrivez-moi</h2>
+
+            <!-- Remplacer TON_EMAIL par ton adresse e-mail -->
+            <form
+                class="contact-form"
+                action="https://formsubmit.co/TON_EMAIL"
+                method="POST"
+            >
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="Nouveau message depuis Carine's World"
+                >
+
+                <input type="hidden" name="_captcha" value="true">
+
+                <label for="name">Votre nom</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Votre nom"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="email">Votre e-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="votre@email.fr"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="message">Votre message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Écrivez votre message ici..."
+                    required
+                ></textarea>
+
+                <button class="btn" type="submit">
+                    Envoyer mon message →
+                </button>
+            </form>
+        </section>
+
+        <section class="contact-links">
+            <h2>Ou retrouvez-moi ici</h2>
+
+            <div class="contact-options">
+
+                <div class="contact-option">
+                    <h3>E-mail</h3>
+                    <p>Pour me contacter directement.</p>
+
+                    <a href="mailto:TON_EMAIL">
+                        M'envoyer un e-mail ↗
+                    </a>
+                </div>
+
+                <div class="contact-option">
+                    <h3>GitHub</h3>
+                    <p>Pour découvrir mon code et mes projets.</p>
+
+                    <a
+                        href="https://github.com/Saboche6919"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Découvrir mon GitHub ↗
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cv-section">
+            <h2>Mon CV</h2>
+            <p>
+                Pour découvrir mon parcours plus en détail,
+                vous pouvez télécharger mon CV.
+            </p>
+
+            <a
+                class="btn contact-cv"
+                href="documents/cv-carine-baka.pdf"
+                download
+            >
+                Télécharger mon CV ↓
+            </a>
+        </section>
+
+    </main>
+</body>
+</html>
