@@ -99,6 +99,54 @@ textarea:focus-visible {
     outline-offset: 3px;
 }
 
+/* Boutons principaux */
+.home-btn,
+.about-button,
+.skills-button,
+.project-button,
+.contact-form button,
+.contact-cv {
+    background: var(--accent);
+    color: var(--blanc);
+    border-color: var(--accent);
+}
+
+.home-btn:hover,
+.about-button:hover,
+.skills-button:hover,
+.project-button:hover,
+.contact-form button:hover,
+.contact-cv:hover {
+    background: var(--texte);
+    color: var(--blanc);
+}
+
+/* Étiquettes communes */
+.about-label,
+.skills-label,
+.projects-label,
+.project-number,
+.contact-label {
+    color: var(--accent);
+    font: 500 19px 'Fredoka', Arial, sans-serif;
+}
+
+/* Titres des pages */
+.skills-intro h1,
+.projects-intro h1,
+.contact-intro h1 {
+    margin: 10px 0;
+    color: var(--texte);
+    font-size: 55px;
+}
+
+.skills-intro p,
+.projects-intro p,
+.contact-intro p {
+    max-width: 650px;
+    font-size: 18px;
+}
+
 /* 4. Accueil */
 .home {
     display: flex;
@@ -151,14 +199,6 @@ textarea:focus-visible {
 
 .home-btn {
     padding: 15px 28px;
-    background: var(--accent);
-    color: var(--blanc);
-    border-color: var(--accent);
-}
-
-.home-btn:hover {
-    background: var(--texte);
-    color: var(--blanc);
 }
 
 /* 5. À propos */
@@ -191,11 +231,6 @@ textarea:focus-visible {
     flex: 1;
 }
 
-.about-label {
-    color: var(--accent);
-    font: 500 19px 'Fredoka', Arial, sans-serif;
-}
-
 .about-text h1 {
     color: var(--texte);
     font-size: 48px;
@@ -208,57 +243,9 @@ textarea:focus-visible {
 
 .about-button {
     margin-top: 20px;
-    background: var(--accent);
-    color: var(--blanc);
-    border-color: var(--accent);
 }
 
-.about-button:hover {
-    background: var(--texte);
-    color: var(--blanc);
-}
-
-/* 6. À propos : anecdotes */
-.about-details {
-    max-width: 900px;
-    margin: 0 auto 70px;
-    text-align: left;
-}
-
-.about-details h2 {
-    margin-bottom: 30px;
-}
-
-.about-line {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 20px;
-    border-bottom: 1px solid var(--bordure);
-    transition: 0.3s;
-}
-
-.about-line:hover {
-    background: #fff0f4;
-    border-radius: 12px;
-    transform: translateX(6px);
-}
-
-.about-line span {
-    color: var(--accent);
-    font: 500 25px 'Fredoka', Arial, sans-serif;
-}
-
-.about-line h3 {
-    margin: 0;
-    font-size: 22px;
-}
-
-.about-line p {
-    margin: 5px 0 0;
-}
-
-/* 7. Compétences */
+/* 6. Compétences */
 .skills-page {
     max-width: 1000px;
     margin: auto;
@@ -267,22 +254,6 @@ textarea:focus-visible {
 
 .skills-intro {
     margin: 60px 0 70px;
-}
-
-.skills-label {
-    color: var(--accent);
-    font: 500 19px 'Fredoka', Arial, sans-serif;
-}
-
-.skills-intro h1 {
-    margin: 10px 0;
-    color: var(--texte);
-    font-size: 55px;
-}
-
-.skills-intro p {
-    max-width: 650px;
-    font-size: 18px;
 }
 
 .skills-section {
@@ -345,18 +316,7 @@ textarea:focus-visible {
     margin: 20px auto 30px;
 }
 
-.skills-button {
-    background: var(--accent);
-    color: var(--blanc);
-    border-color: var(--accent);
-}
-
-.skills-button:hover {
-    background: var(--texte);
-    color: var(--blanc);
-}
-
-/* 8. Projets */
+/* 7. Projets */
 .projects-page {
     max-width: 1100px;
     margin: auto;
@@ -365,23 +325,6 @@ textarea:focus-visible {
 
 .projects-intro {
     margin: 60px 0 80px;
-}
-
-.projects-label,
-.project-number {
-    color: var(--accent);
-    font: 500 19px 'Fredoka', Arial, sans-serif;
-}
-
-.projects-intro h1 {
-    margin: 10px 0;
-    color: var(--texte);
-    font-size: 55px;
-}
-
-.projects-intro p {
-    max-width: 650px;
-    font-size: 18px;
 }
 
 .project {
@@ -438,27 +381,6 @@ textarea:focus-visible {
 
 .project-button {
     margin-top: 15px;
-    background: var(--accent);
-    color: var(--blanc);
-    border-color: var(--accent);
-}
-
-.project-button:hover {
-    background: var(--texte);
-    color: var(--blanc);
-}
-
-.projects-progress {
-    max-width: 750px;
-    margin: 40px auto 90px;
-    padding: 30px 0;
-    border-top: 2px solid var(--accent);
-    border-bottom: 2px solid var(--accent);
-}
-
-.projects-progress h2 {
-    color: var(--texte);
-    font-size: 34px;
 }
 
 .projects-end {
@@ -475,7 +397,41 @@ textarea:focus-visible {
     margin: 20px auto;
 }
 
-/* 9. Contact */
+/* Projet Java en préparation */
+.project-placeholder {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: linear-gradient(
+        135deg,
+        #fff7f4,
+        #e9c8d1
+    );
+    border: 2px dashed var(--accent);
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.project-placeholder span {
+    color: var(--accent);
+    font: 600 65px 'Fredoka', Arial, sans-serif;
+}
+
+.project-placeholder p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+.project-placeholder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #a8798c35;
+}
+
+/* 8. Contact */
 .contact-page {
     max-width: 1000px;
     margin: auto;
@@ -484,22 +440,6 @@ textarea:focus-visible {
 
 .contact-intro {
     margin: 60px 0 70px;
-}
-
-.contact-label {
-    color: var(--accent);
-    font: 500 19px 'Fredoka', Arial, sans-serif;
-}
-
-.contact-intro h1 {
-    margin: 10px 0;
-    color: var(--texte);
-    font-size: 55px;
-}
-
-.contact-intro p {
-    max-width: 650px;
-    font-size: 18px;
 }
 
 .contact-section {
@@ -543,14 +483,6 @@ textarea:focus-visible {
 
 .contact-form button {
     margin-top: 20px;
-    background: var(--accent);
-    color: var(--blanc);
-    border-color: var(--accent);
-}
-
-.contact-form button:hover {
-    background: var(--texte);
-    color: var(--blanc);
 }
 
 .contact-links {
@@ -592,7 +524,7 @@ textarea:focus-visible {
     text-decoration: underline;
 }
 
-/* 10. CV */
+/* 9. CV */
 .cv-section {
     margin: 70px auto 100px;
     padding: 30px 0;
@@ -609,31 +541,26 @@ textarea:focus-visible {
     margin: 15px auto 25px;
 }
 
-.contact-cv {
-    background: var(--accent);
-    color: var(--blanc);
-    border-color: var(--accent);
-}
-
-.contact-cv:hover {
-    background: var(--texte);
-    color: var(--blanc);
-}
-
-/* 11. Curseur personnalisé */
-body,
-a,
-button {
+/* 10. Curseur personnalisé */
+body {
     cursor: url("images/patte-ouverte-28px.png") 14 14, auto;
 }
 
-body:active,
-a:active,
-button:active {
+a,
+button {
+    cursor: url("images/patte-ouverte-28px.png") 14 14, pointer;
+}
+
+body:active {
     cursor: url("images/patte-fermee-28px.png") 14 14, auto;
 }
 
-/* 12. Fond animé */
+a:active,
+button:active {
+    cursor: url("images/patte-fermee-28px.png") 14 14, pointer;
+}
+
+/* 11. Fond animé */
 @keyframes couleurs {
     0%, 100% {
         background-position: 0% 50%;
@@ -644,7 +571,7 @@ button:active {
     }
 }
 
-/* 13. Téléphone */
+/* 12. Téléphone */
 @media (max-width: 650px) {
     header,
     main {
@@ -701,11 +628,6 @@ button:active {
         font-size: 17px;
     }
 
-    .about-line {
-        gap: 20px;
-        padding: 18px 10px;
-    }
-
     .skills-intro {
         margin: 30px 0 50px;
     }
@@ -760,7 +682,7 @@ button:active {
     }
 }
 
-/* 14. Accessibilité */
+/* 13. Accessibilité */
 @media (prefers-reduced-motion: reduce) {
     body {
         animation: none;
@@ -769,66 +691,18 @@ button:active {
 
     .btn,
     .avatar,
-    .about-line,
     .skills-list span,
     .project-image img,
-    .contact-option a {
+    .contact-option a,
+    .project-placeholder {
         transition: none;
     }
 
     .btn:hover,
     .avatar:hover,
-    .about-line:hover,
     .skills-list span:hover,
     .project-image img:hover,
-    .contact-option a:hover {
-        transform: none;
-    }
-}
-
-
-/* Projet Java en préparation */
-
-.project-placeholder {
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-
-    background: linear-gradient(
-        135deg,
-        #fff7f4,
-        #e9c8d1
-    );
-
-    border: 2px dashed var(--accent);
-    border-radius: 20px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.project-placeholder span {
-    color: var(--accent);
-    font: 600 65px 'Fredoka', Arial, sans-serif;
-}
-
-.project-placeholder p {
-    margin: 10px 0 0;
-    font-size: 18px;
-}
-
-.project-placeholder:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px #a8798c35;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .project-placeholder {
-        transition: none;
-    }
-
+    .contact-option a:hover,
     .project-placeholder:hover {
         transform: none;
     }
