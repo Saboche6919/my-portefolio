@@ -950,3 +950,66 @@ body header nav .btn:hover {
 }
 
 /* MENU VERTICAL GLOBAL - FIN */
+
+
+/* CORRECTION MENU VERTICAL - DEBUT */
+
+body header nav {
+    position: fixed !important;
+    top: 50% !important;
+    right: 15px !important;
+    left: auto !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+
+    width: 145px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    z-index: 1000 !important;
+}
+
+body header nav a.btn {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    border-radius: 50px !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+}
+
+body header nav a.btn:hover {
+    transform: translateX(-5px) !important;
+}
+
+body main {
+    padding-right: 180px !important;
+}
+
+@media (max-width: 600px) {
+    body header nav {
+        right: 5px !important;
+        width: 105px !important;
+        gap: 8px !important;
+    }
+
+    body header nav a.btn {
+        padding: 9px 5px !important;
+        font-size: 12px !important;
+    }
+
+    body main {
+        padding-right: 115px !important;
+    }
+}
+
+/* CORRECTION MENU VERTICAL - FIN */
