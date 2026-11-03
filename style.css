@@ -863,3 +863,90 @@ nav .btn:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.95);
 }
+
+/* MENU VERTICAL GLOBAL - DEBUT */
+
+/* Menu fixé à droite */
+body header nav {
+    position: fixed !important;
+    top: 50% !important;
+    right: 20px !important;
+    left: auto !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+
+    width: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    z-index: 1000 !important;
+}
+
+/* Boutons indépendants */
+body header nav .btn {
+    display: block !important;
+    width: 145px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+
+    border-radius: 50px !important;
+    background: rgba(255, 255, 255, 0.75) !important;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease !important;
+}
+
+/* Animation au survol */
+body header nav .btn:hover {
+    transform: translateX(-6px) !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Espace pour le menu sur ordinateur */
+@media (min-width: 901px) {
+    body main {
+        padding-right: 185px !important;
+    }
+}
+
+/* Adaptation téléphone */
+@media (max-width: 900px) {
+    body header nav {
+        position: static !important;
+        transform: none !important;
+
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+
+        width: 100% !important;
+        margin: 15px auto !important;
+    }
+
+    body header nav .btn {
+        width: auto !important;
+    }
+}
+
+/* Accessibilité */
+@media (prefers-reduced-motion: reduce) {
+    body header nav .btn {
+        transition: none !important;
+    }
+
+    body header nav .btn:hover {
+        transform: none !important;
+    }
+}
+
+/* MENU VERTICAL GLOBAL - FIN */
