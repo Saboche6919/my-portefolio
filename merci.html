@@ -5,6 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message envoyé | Carine's World</title>
     <link rel="stylesheet" href="style.css">
+
+<style>
+/* Navigation verticale de la page Merci */
+body nav.merci-navigation {
+    position: fixed !important;
+    top: 50% !important;
+    right: 25px !important;
+    left: auto !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+
+    width: auto !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    z-index: 100 !important;
+}
+
+body nav.merci-navigation a {
+    display: block !important;
+    width: 150px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    border-radius: 50px !important;
+}
+
+@media (max-width: 700px) {
+    body nav.merci-navigation {
+        position: static !important;
+        transform: none !important;
+        align-items: center !important;
+        margin: 30px auto !important;
+    }
+}
+</style>
+
 </head>
 <body>
     <main style="min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;">
